@@ -39,7 +39,9 @@ const Navbar = () => {
             <Link className="">Our Mission</Link>
           </li>
           <li>
-            <Link className="">Our Team</Link>
+            <Link to="/team" className="">
+              Our Team
+            </Link>
           </li>
           <li>
             <Link className="">Career</Link>
