@@ -25,7 +25,7 @@ const SolutionCarousel = () => {
             clickable: true,
           }}
           modules={[Pagination, Navigation, Autoplay]}
-          slidesPerView={3}
+          slidesPerView={2}
           spaceBetween={30}
           className="mySwiper"
         >

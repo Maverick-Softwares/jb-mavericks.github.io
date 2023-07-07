@@ -3,26 +3,34 @@ import { BsChevronDown } from "react-icons/bs";
 const Navbar = () => {
   const navList = (
     <>
-      <Link className="btn btn-ghost">Home</Link>
-      <div className="dropdown dropdown-end">
+      <Link to="/" className="btn btn-ghost">
+        Home
+      </Link>
+      <Link to="/services" className="btn btn-ghost">
+        Services
+      </Link>
+      {/* <div className="dropdown dropdown-end">
         <label tabIndex={0} className="btn btn-ghost rounded-btn">
-          Product <BsChevronDown />
+          Services <BsChevronDown />
         </label>
         <ul
           tabIndex={0}
           className="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4"
         >
           <li>
-            <Link className="">Solutions</Link>
+            <Link className="">Desktop App</Link>
           </li>
           <li>
-            <Link className="">Use Cases</Link>
+            <Link className="">Mobile App</Link>
           </li>
           <li>
-            <Link className="">Developers</Link>
+            <Link className="">Web App</Link>
+          </li>
+          <li>
+            <Link className="">Server Maintainance</Link>
           </li>
         </ul>
-      </div>
+      </div> */}
       <div className="dropdown dropdown-end">
         <label tabIndex={1} className="btn btn-ghost rounded-btn">
           Company
@@ -33,12 +41,6 @@ const Navbar = () => {
           className="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4"
         >
           <li>
-            <Link className="">Corporate Profile</Link>
-          </li>
-          <li>
-            <Link className="">Our Mission</Link>
-          </li>
-          <li>
             <Link to="/team" className="">
               Our Team
             </Link>
@@ -48,6 +50,12 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      <Link to="/about" className="btn btn-ghost">
+        About
+      </Link>
+      <Link to="/contact" className="btn btn-ghost">
+        Contact Us
+      </Link>
     </>
   );
   return (
