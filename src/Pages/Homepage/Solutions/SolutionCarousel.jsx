@@ -11,7 +11,29 @@ import "./SolutionCarousel.css";
 import { Fragment } from "react";
 import Solution from "./Solution";
 import SolutionCarouselCard from "./SolutionCarouselCard";
+import webGif from "../../../assets/services/web.gif";
+import mobileGif from "../../../assets/services/mobile.gif";
+import serverGif from "../../../assets/services/server.gif";
+import desktopGif from "../../../assets/services/desktop.gif";
 const SolutionCarousel = () => {
+  const servicesArr = [
+    {
+      title: "Desktop Application",
+      img: desktopGif,
+    },
+    {
+      title: "Mobile Application",
+      img: mobileGif,
+    },
+    {
+      title: "Web Application",
+      img: webGif,
+    },
+    {
+      title: "Server Maintainance",
+      img: serverGif,
+    },
+  ];
   return (
     <Fragment>
       <div>
@@ -29,18 +51,11 @@ const SolutionCarousel = () => {
           spaceBetween={30}
           className="mySwiper"
         >
-          <SwiperSlide>
-            <SolutionCarouselCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SolutionCarouselCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SolutionCarouselCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SolutionCarouselCard />
-          </SwiperSlide>
+          {servicesArr.map((item) => (
+            <SwiperSlide key={(Math.random * 232339999).toString()}>
+              <SolutionCarouselCard item={item} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </Fragment>
