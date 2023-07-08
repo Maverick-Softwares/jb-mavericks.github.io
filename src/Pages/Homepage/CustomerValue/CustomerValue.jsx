@@ -2,7 +2,7 @@ import CustomerValueProgress from "./CustomerValueProgress";
 
 const CustomerValue = () => {
   return (
-    <div className="my-12">
+    <div className="my-32">
       <h2 className="text-4xl mb-8 font-semibold text-center">
         Customer Values
       </h2>

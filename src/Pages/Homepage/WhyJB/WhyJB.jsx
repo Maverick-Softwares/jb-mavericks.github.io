@@ -1,4 +1,3 @@
-import React from "react";
 import WhyJBCard from "./WhyJBCard";
 import solutionPng from "../../../assets/whyUs/solutions.png";
 import uxPng from "../../../assets/whyUs/ux.png";
@@ -29,7 +28,7 @@ const WhyJB = () => {
   ];
 
   return (
-    <div>
+    <div className="my-20">
       <div className=" w-1/2 text-center mx-auto">
         <h2 className="text-5xl font-semibold mb-8">Why Mavericks?</h2>
         <p className="text-gray-500 text-xl">
@@ -39,7 +38,7 @@ const WhyJB = () => {
         </p>
       </div>
       {/* cards */}
-      <div className="grid grid-cols-4 gap-6">
+      <div className="grid grid-cols-4 gap-6 my-16 px-8">
         {whyMavericksCards.map((item) => (
           <WhyJBCard key={(Math.random * 100009999).toString()} item={item} />
         ))}
