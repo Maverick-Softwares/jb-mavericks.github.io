@@ -1,8 +1,8 @@
 import React from "react";
-
+import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 const ContactForm = () => {
   return (
-    <div className="hero min-h-screen bg-base-100 mt-16">
+    <div className="hero min-h-screen bg-base-100 mt-6 lg:px-32">
       <div className="hero-content flex-col lg:flex-row">
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold">Send Us Your Queries!</h1>
@@ -11,6 +11,17 @@ const ContactForm = () => {
             line and let our team of experts provide you with the answers you're
             looking for.
           </p>
+          <div className="flex">
+            <a href="">
+              <BsFacebook size={35} className="text-gray-700" />
+            </a>
+            <a href="https://github.com/Maverick-Softwares">
+              <BsGithub size={35} className="text-gray-700 mx-5" />
+            </a>
+            <a href="https://github.com/Maverick-Softwares">
+              <BsLinkedin size={35} className="text-gray-700 mx-5" />
+            </a>
+          </div>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <div className="card-body">
@@ -30,7 +41,7 @@ const ContactForm = () => {
               </label>
               <textarea
                 className="textarea textarea-bordered"
-                placeholder="Bio"
+                placeholder="Please share your thoughts"
               ></textarea>
             </div>
             <div className="form-control mt-6">
