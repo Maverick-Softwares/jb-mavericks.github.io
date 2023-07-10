@@ -12,14 +12,14 @@ const ContactForm = () => {
             looking for.
           </p>
           <div className="flex">
-            <a href="">
+            <a href="https://www.facebook.com/mavericksoftwaresltd">
               <BsFacebook size={35} className="text-gray-700" />
             </a>
             <a href="https://github.com/Maverick-Softwares">
               <BsGithub size={35} className="text-gray-700 mx-5" />
             </a>
-            <a href="https://github.com/Maverick-Softwares">
-              <BsLinkedin size={35} className="text-gray-700 mx-5" />
+            <a href="https://www.linkedin.com/company/mavericks-softwares/">
+              <BsLinkedin size={35} className="text-gray-700" />
             </a>
           </div>
         </div>

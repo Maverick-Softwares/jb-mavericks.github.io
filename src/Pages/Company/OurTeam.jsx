@@ -30,13 +30,13 @@ const OurTeam = () => {
       name: "Anik Kanti Dev",
       linkedIn: "https://www.linkedin.com/in/anikkdev/",
       github: "https://github.com/anikKDev",
-      designation: "",
+      designation: "Software Engineer",
       profile: anikImg,
     },
   ];
   return (
     <div className="my-16 px-8">
-      <div className=" w-1/2 text-center mx-auto">
+      <div className=" w-3/5 text-center mx-auto">
         <h2 className="text-5xl font-semibold mb-8">Our Team</h2>
         <p className="text-gray-500 text-xl">
           At Maverick Softwares, our team is a dedicated group of skilled
