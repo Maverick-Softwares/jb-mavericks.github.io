@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 
-const RadialProgress = () => {
+const RadialProgress = ({ val }) => {
   const progressRef = useRef(null);
   const [isIntersecting, setIsIntersecting] = useState(false);
   const [value, setValue] = useState(0);
@@ -28,7 +28,7 @@ const RadialProgress = () => {
 
   useEffect(() => {
     if (isIntersecting) {
-      const targetValue = 70;
+      const targetValue = parseInt(val);
       const duration = 1000; // milliseconds
       const interval = 10; // milliseconds
 

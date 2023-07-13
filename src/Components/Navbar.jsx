@@ -61,7 +61,7 @@ const Navbar = () => {
   return (
     <div className="navbar bg-white rounded-box px-6 sticky top-0 z-10 shadow-lg">
       <div className="flex-1 px-2 lg:flex-none">
-        <a className="text-lg font-bold">JB</a>
+        <a className="text-2xl font-bold">Maverick Softwares</a>
       </div>
       <div className="flex justify-end flex-1 px-2">
         <div className="flex items-stretch">{navList}</div>
