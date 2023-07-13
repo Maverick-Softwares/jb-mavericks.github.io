@@ -4,7 +4,7 @@ const RadialProgress = ({ val }) => {
   const progressRef = useRef(null);
   const [isIntersecting, setIsIntersecting] = useState(false);
   const [value, setValue] = useState(0);
-
+  // test
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
